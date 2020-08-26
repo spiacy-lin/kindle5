@@ -6,11 +6,11 @@ export interface GitHubUser {
     html_url: string;
     avatar_url: string;
     login: string;
-    score: string
+    score: string;
 }
 
 @Injectable()
-export class GitHubService {
+export class GitHubService{
     constructor(private _http: HttpClient){
 
     }
