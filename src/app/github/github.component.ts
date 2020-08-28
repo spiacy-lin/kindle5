@@ -51,7 +51,7 @@ export class GitHubComponent {
       this._githubService.getGitHubData(value).subscribe(data => {
         console.log(data);
         this.isLoading=false;
-        //this.users = JSON.stringify(data);
+        //this.users = JSON.parse(data.items);
       });
     });
   }
